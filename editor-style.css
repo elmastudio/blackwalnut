@@ -1,0 +1,264 @@
+/*
+Theme Name: Black Walnut
+Description: Used to style the TinyMCE editor.
+*/
+
+
+html .mceContentBody {
+	font-size: 100%;
+	max-width: 650px;
+}
+body {
+	font-family: 'Times New Roman', Georgia, serif;
+	font-size: 16px;
+	color: #222222;
+	font-weight: normal;
+	line-height: 1.75;
+	text-rendering: optimizeLegibility;
+	vertical-align: baseline;
+}
+
+/* --- Headlines --- */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Source Code Pro', mono;
+	font-weight: normal;
+}
+h1 {
+	margin: 46px 0 15px;
+	font-size: 22px;
+	font-size:  1.375rem;
+}
+h2 {
+	margin: 46px 0 12px;
+	font-size: 22px;
+	font-size: 1.375rem;
+	line-height: 1.35;
+}
+h3 {
+	margin: 38px 0 10px;
+	font-size: 20px;
+	font-size: 1.25rem;
+	line-height: 1.4;
+}
+h4 {
+	margin: 30px 0 10px;
+	font-size: 18px;
+	font-size: 1.125rem;
+	line-height: 1.4;
+}
+h5 {
+	margin: 24px 0 8px;
+	font-size: 16px;
+	font-size: 1rem;
+}
+h6 {
+	margin: 24px 0 8px;
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+
+
+/* --- Text Elements --- */
+p {
+	margin-bottom: 24px;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 2.2;
+}
+p strong {
+	font-weight: bold !important;
+}
+em {
+	font-style: italic;
+}
+p small {
+	font-size: .8em;
+}
+blockquote {
+	position: relative;
+	font-size: 20px;
+	font-size: 1.25rem;
+	line-height: 1.9;
+	font-style: italic;
+}
+blockquote p {
+	margin: 0;
+	line-height: 1.7;
+}
+blockquote cite {
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-style: normal;
+	display: block;
+	padding-top: 20px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+pre {
+	max-width: 100%;
+	margin-bottom: 24px;
+	padding: 15px;
+	overflow: auto;
+	background: #ededed;
+	font-family:  Consolas, Monaco, monospace;
+	font-size: 12px;
+	font-size: 0.75rem;
+	line-height: 1.4;
+}
+address {
+	margin: 0 0 24px;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.6;
+}
+abbr,acronym {
+	border-bottom:.1em dotted;
+}
+mark, ins {
+	background: #d6fce2;
+	text-decoration: none;
+}
+
+/* --- Images --- */
+img, .page img {
+	max-width:100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+img[class*="wp-image-"] {
+	height: auto;
+	max-width: 97.5%;
+}
+img.size-full {
+	width: auto; /* Prevent stretching of full-size images in IE8 */
+}
+p img,
+.wp-caption {
+	margin-top: 0.4em;
+}
+.wp-caption {
+	padding: 15px 2px 0;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 1.35;
+	font-style: italic;
+	text-align: center;
+}
+.wp-caption-dd {
+	font-size: 13px;
+	line-height: 1.35;
+	padding: 12px 0 24px;
+}
+img {
+	border: none;
+}
+img.alignleft,
+img.alignright,
+img.aligncenter {
+	margin-bottom: 1.625em;
+}
+.wp-caption {
+	width:auto !important;
+	max-width: 100%;
+	text-align: left;
+}
+.wp-caption .wp-caption-text {
+	margin: 0;
+	padding: 10px 2px 38px;
+}
+/* --- Tables --- */
+table {
+	width: 100%;
+	margin: 0 0 40px;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-bottom: 1px solid #ccc;
+	line-height: 2;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	text-align: left;
+}
+table td {
+	padding: 6px 6px 6px 0;
+	border-top: 1px solid #ccc;
+}
+table caption {
+	margin: 40px 0;
+}
+table th {
+	padding: 6px 6px 6px 0;
+	text-align:left;
+	font-weight: bold;
+}
+
+/* --- List Elements --- */
+ul, ol {
+	margin: 0 0 24px 0;
+	padding-left: 40px;
+	list-style-position: inside;
+}
+ul {
+	list-style: square;
+}
+ol {
+	list-style: decimal;
+}
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 0;
+}
+ul li,
+ol li,
+ul li,
+ul li  {
+	margin-bottom: 4px;
+	list-style-position: outside;
+}
+ul ul li:last-child,
+ol ol li:last-child,
+ul ul li:last-child,
+ol ol li:last-child {
+	margin-bottom: 0;
+}
+ul ul,
+ol ol,
+ul ul,
+ol ol {
+	padding-left: 50px;
+}
+
+/* --- Links --- */
+a,
+a em,
+a strong {
+	color: #54a8d0;
+	text-decoration: none;
+}
+
+
+/* --- Alignment --- */
+.alignleft,
+.alignright {
+	display: block;
+}
+.alignleft {
+	margin: 5px 45px 5px 0;
+	float: left;
+}
+.alignright {
+	margin: 5px 0 0 30px;
+	float: right;
+}
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+}
+img.alignleft,
+img.alignright {
+	margin-top:10px;
+	margin-bottom:20px;
+}

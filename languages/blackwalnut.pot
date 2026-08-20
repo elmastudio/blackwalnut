@@ -1,0 +1,751 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Black Walnut\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-28 14:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.0; wp-4.9.8"
+
+#: functions.php:48
+msgid "small"
+msgstr ""
+
+#: functions.php:49
+msgid "S"
+msgstr ""
+
+#: functions.php:54
+msgid "regular"
+msgstr ""
+
+#: functions.php:55
+msgid "M"
+msgstr ""
+
+#: functions.php:60
+msgid "large"
+msgstr ""
+
+#: functions.php:61
+msgid "L"
+msgstr ""
+
+#: functions.php:66
+msgid "larger"
+msgstr ""
+
+#: functions.php:67
+msgid "XL"
+msgstr ""
+
+#: functions.php:79
+msgid "dark grey"
+msgstr ""
+
+#: functions.php:84
+msgid "light grey"
+msgstr ""
+
+#: functions.php:89
+msgid "white"
+msgstr ""
+
+#: functions.php:94
+msgid "light yellow"
+msgstr ""
+
+#: functions.php:99
+msgid "light red"
+msgstr ""
+
+#: functions.php:104
+msgid "light green"
+msgstr ""
+
+#: functions.php:109
+msgid "light blue"
+msgstr ""
+
+#: functions.php:126
+msgid "Primary menu"
+msgstr ""
+
+#. If there are characters in your language that are not
+#. supported by the used fonts translate this to 'off'. Do not translate
+#. into your own language.
+#: functions.php:166
+msgctxt "Source Code Pro: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:168
+msgctxt "PT Serif: on or off"
+msgid "on"
+msgstr ""
+
+#. 1: date
+#: functions.php:459
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: functions.php:464 content-single.php:23 content.php:25 content-quote.php:18
+#: content-image.php:18
+msgid "Edit"
+msgstr ""
+
+#: functions.php:471
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:475
+msgid "Reply"
+msgstr ""
+
+#: functions.php:486
+msgid "<span>Pingback:</span>"
+msgstr ""
+
+#: functions.php:502
+msgid "Blog Sidebar"
+msgstr ""
+
+#: functions.php:504
+msgid "Widgets appear in a right-aligned sidebar on single posts."
+msgstr ""
+
+#: functions.php:512
+msgid "Page Sidebar"
+msgstr ""
+
+#: functions.php:514
+msgid "Widgets appear on pages using the Default Page template."
+msgstr ""
+
+#: functions.php:522
+msgid "Contact Sidebar"
+msgstr ""
+
+#: functions.php:524
+msgid "Widgets appear on pages using the Contact Page template."
+msgstr ""
+
+#: functions.php:532
+msgid "Footer: 3-columns (left)"
+msgstr ""
+
+#: functions.php:534
+msgid "First widget area of the three-column Footer widget area."
+msgstr ""
+
+#: functions.php:542
+msgid "Footer: 3-columns (center)"
+msgstr ""
+
+#: functions.php:544
+msgid "Second widget area of the three-column Footer widget area."
+msgstr ""
+
+#: functions.php:552
+msgid "Footer: 3-columns (right)"
+msgstr ""
+
+#: functions.php:554
+msgid "Third widget area of the three-column Footer widget area."
+msgstr ""
+
+#: functions.php:579
+msgid "<span>Previous</span>"
+msgstr ""
+
+#: functions.php:579 functions.php:604
+msgid "|"
+msgstr ""
+
+#: functions.php:579
+msgid "<span>Next</span>"
+msgstr ""
+
+#: functions.php:604
+msgid "<span class=\"meta-nav\">Previous</span>"
+msgstr ""
+
+#: functions.php:604
+msgid "<span class=\"meta-nav\">Next</span>"
+msgstr ""
+
+#: content-single.php:20
+msgid "Leave a comment"
+msgstr ""
+
+#: content-single.php:20
+msgid "comment 1"
+msgstr ""
+
+#: content-single.php:20
+msgid "comments %"
+msgstr ""
+
+#: content-single.php:37 content-page.php:20 content.php:44
+msgid "Pages:"
+msgstr ""
+
+#: content-single.php:45
+msgid "Category"
+msgstr ""
+
+#: content-single.php:49
+msgid "Tags"
+msgstr ""
+
+#: content-single.php:56
+msgid "by "
+msgstr ""
+
+#: 404.php:16
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:20
+msgid ""
+"It looks like nothing was found at this location. Maybe try another search "
+"term?"
+msgstr ""
+
+#: archive.php:19
+#, php-format
+msgid "All posts filed under %s"
+msgstr ""
+
+#: archive.php:22
+#, php-format
+msgid "All posts tagged: %s"
+msgstr ""
+
+#: archive.php:25
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: archive.php:28
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: archive.php:31
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: archive.php:31
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: archive.php:34
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: archive.php:34
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: archive.php:37
+msgid "Archives"
+msgstr ""
+
+#: archive.php:64 search.php:31
+msgid "Nothing Found"
+msgstr ""
+
+#: archive.php:68
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for."
+msgstr ""
+
+#: comments.php:24
+#, php-format
+msgid "Comment 1"
+msgid_plural "Comments %1$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:38
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:39
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:48
+msgid "Comments are closed."
+msgstr ""
+
+#: content-page.php:26
+msgid "Edit this Page"
+msgstr ""
+
+#: content.php:31 content-quote.php:24 content-image.php:24
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: content.php:41 content-quote.php:29 content-image.php:29
+msgid "Read More"
+msgstr ""
+
+#: search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: search.php:35
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: header.php:26
+msgid "Menu"
+msgstr ""
+
+#: header.php:55
+msgid "more info"
+msgstr ""
+
+#: header.php:66
+msgid "Close"
+msgstr ""
+
+#: footer.php:30
+msgid "Proudly powered by"
+msgstr ""
+
+#: footer.php:30
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: footer.php:30
+msgid "WordPress."
+msgstr ""
+
+#: footer.php:33
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: footer.php:38
+msgid "Top"
+msgstr ""
+
+#: searchform.php:11
+msgid "Search"
+msgstr ""
+
+#: searchform.php:12
+msgctxt "placeholder"
+msgid "Search&hellip;"
+msgstr ""
+
+#: searchform.php:13
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: inc/widgets.php:17
+msgid "Quote (Black Walnut)"
+msgstr ""
+
+#: inc/widgets.php:19
+msgid "A quote or text slogan."
+msgstr ""
+
+#: inc/widgets.php:66
+msgid "Title:"
+msgstr ""
+
+#: inc/widgets.php:71
+msgid "Quote Text:"
+msgstr ""
+
+#: inc/widgets.php:76
+msgid "Quote Author (optional):"
+msgstr ""
+
+#: inc/customizer.php:20
+msgid "Theme"
+msgstr ""
+
+#. Name of the template
+#: inc/customizer.php:25
+msgid "Front Page - Big Image"
+msgstr ""
+
+#. Name of the template
+#: inc/customizer.php:30
+msgid "Front Page - Four Images"
+msgstr ""
+
+#: inc/customizer.php:35
+msgid "Front Page - Video"
+msgstr ""
+
+#: inc/customizer.php:56
+msgid "Link Color"
+msgstr ""
+
+#: inc/customizer.php:68
+msgid "Fixed-position main menu"
+msgstr ""
+
+#: inc/customizer.php:69
+msgid "(visible on wider screens only)"
+msgstr ""
+
+#: inc/customizer.php:81
+msgid "Hide Featured Image on single posts"
+msgstr ""
+
+#: inc/customizer.php:93
+msgid "Automatic archive excerpts"
+msgstr ""
+
+#: inc/customizer.php:94
+msgid "(Show automatic excerpts on archives and search results.)"
+msgstr ""
+
+#: inc/customizer.php:106
+msgid "Automatic blog excerpts"
+msgstr ""
+
+#: inc/customizer.php:107
+msgid "(Show automatic excerpts on blog.)"
+msgstr ""
+
+#: inc/customizer.php:124
+msgid "Front Page Header Intro Text"
+msgstr ""
+
+#: inc/customizer.php:133
+msgid "Custom Footer Credit Text"
+msgstr ""
+
+#: inc/customizer.php:145
+msgid "Site Title Font Style"
+msgstr ""
+
+#: inc/customizer.php:150
+msgid "non-serif (default)"
+msgstr ""
+
+#: inc/customizer.php:151
+msgid "non-serif uppercase"
+msgstr ""
+
+#: inc/customizer.php:152
+msgid "serif"
+msgstr ""
+
+#: inc/customizer.php:153
+msgid "serif italic uppercase"
+msgstr ""
+
+#: inc/customizer.php:168
+msgid "Site Title Font Size"
+msgstr ""
+
+#: inc/customizer.php:169
+msgid "Change the font size of your site title."
+msgstr ""
+
+#: inc/customizer.php:187
+msgid "Site Title Font Size on Front Page"
+msgstr ""
+
+#: inc/customizer.php:188
+msgid "Change the font size of your site title only on the Front page."
+msgstr ""
+
+#: inc/customizer.php:202
+msgid "Image URL"
+msgstr ""
+
+#: inc/customizer.php:203
+msgid ""
+"Upload image under Media / Add New and paste the URL here (image width: "
+"1200px)."
+msgstr ""
+
+#: inc/customizer.php:215
+msgid "Link URL"
+msgstr ""
+
+#: inc/customizer.php:216
+msgid "(when the image is clicked)"
+msgstr ""
+
+#: inc/customizer.php:233 inc/customizer.php:312
+msgid "Small slogan or intro text on image (HTML is allowed)."
+msgstr ""
+
+#: inc/customizer.php:234
+msgid "Slogan Text"
+msgstr ""
+
+#: inc/customizer.php:244
+msgid "Slogan Text Position"
+msgstr ""
+
+#: inc/customizer.php:249 inc/customizer.php:328 inc/customizer.php:403
+#: inc/customizer.php:478 inc/customizer.php:554
+msgid "Top Left"
+msgstr ""
+
+#: inc/customizer.php:250 inc/customizer.php:329 inc/customizer.php:404
+#: inc/customizer.php:479 inc/customizer.php:555
+msgid "Top Right"
+msgstr ""
+
+#: inc/customizer.php:251 inc/customizer.php:330 inc/customizer.php:405
+#: inc/customizer.php:480 inc/customizer.php:556
+msgid "Bottom Right"
+msgstr ""
+
+#: inc/customizer.php:252 inc/customizer.php:331 inc/customizer.php:406
+#: inc/customizer.php:481 inc/customizer.php:557
+msgid "Bottom Left"
+msgstr ""
+
+#: inc/customizer.php:262
+msgid "Slogan Text Color"
+msgstr ""
+
+#: inc/customizer.php:267 inc/customizer.php:346 inc/customizer.php:421
+#: inc/customizer.php:496 inc/customizer.php:572
+msgid "Dark"
+msgstr ""
+
+#: inc/customizer.php:268 inc/customizer.php:347 inc/customizer.php:422
+#: inc/customizer.php:497 inc/customizer.php:573
+msgid "Light"
+msgstr ""
+
+#: inc/customizer.php:282
+msgid "Image One - URL"
+msgstr ""
+
+#: inc/customizer.php:283
+msgid ""
+"Upload image under Media / Add New and paste the URL here (image size: "
+"595x595px)."
+msgstr ""
+
+#: inc/customizer.php:295
+msgid "Image One - Link URL"
+msgstr ""
+
+#: inc/customizer.php:313
+msgid "Image One - Slogan Text"
+msgstr ""
+
+#: inc/customizer.php:323
+msgid "Image One - Text Position"
+msgstr ""
+
+#: inc/customizer.php:341
+msgid "Image One - Text Color"
+msgstr ""
+
+#: inc/customizer.php:358
+msgid "Image Two - URL"
+msgstr ""
+
+#: inc/customizer.php:359 inc/customizer.php:434 inc/customizer.php:510
+msgid "(image size: 595x595px)."
+msgstr ""
+
+#: inc/customizer.php:371
+msgid "Image Two - Link URL"
+msgstr ""
+
+#: inc/customizer.php:388
+msgid "Image Two - Slogan Text"
+msgstr ""
+
+#: inc/customizer.php:398
+msgid "Image Two - Text Position"
+msgstr ""
+
+#: inc/customizer.php:416
+msgid "Image Two - Text Color"
+msgstr ""
+
+#: inc/customizer.php:433
+msgid "Image Three - URL"
+msgstr ""
+
+#: inc/customizer.php:446
+msgid "Image Three - Link URL"
+msgstr ""
+
+#: inc/customizer.php:463
+msgid "Image Three - Slogan Text"
+msgstr ""
+
+#: inc/customizer.php:473
+msgid "Image Three - Text Position"
+msgstr ""
+
+#: inc/customizer.php:491
+msgid "Image Three - Text Color"
+msgstr ""
+
+#: inc/customizer.php:509
+msgid "Image Four - URL"
+msgstr ""
+
+#: inc/customizer.php:522
+msgid "Image Four - Link URL"
+msgstr ""
+
+#: inc/customizer.php:539
+msgid "Image Four - Slogan Text"
+msgstr ""
+
+#: inc/customizer.php:549
+msgid "Image Four - Text Position"
+msgstr ""
+
+#: inc/customizer.php:567
+msgid "Image Four - Text Color"
+msgstr ""
+
+#: inc/customizer.php:589
+msgid "Include the video embed code (video width 1200px)."
+msgstr ""
+
+#: inc/customizer.php:590
+msgid "Video Embed code"
+msgstr ""
+
+#. Name of the template
+msgid "Testimonials Page"
+msgstr ""
+
+#. Name of the template
+msgid "Full Width Page"
+msgstr ""
+
+#. Name of the template
+msgid "Centered Page"
+msgstr ""
+
+#. Name of the template
+msgid "Menu Page"
+msgstr ""
+
+#. Name of the template
+msgid "Contact Page"
+msgstr ""
+
+#. Name of the theme
+msgid "Black Walnut"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Black Walnut is a fresh, responsive, minimal Business WordPress theme. The "
+"page templates for the front page, an About page, a Menu, Testimonials and "
+"Contact page as well as the beautiful, minimal two-column blog layout make "
+"Black Walnut the perfect little theme for small businesses like cafés, "
+"restaurants, yoga schools or freelancer businesses."
+msgstr ""
+
+#. URI of the theme
+msgid "https://www.elmastudio.de/en/themes/blackwalnut/"
+msgstr ""
+
+#. Author of the theme
+msgid "Elmastudio"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://www.elmastudio.de/en/"
+msgstr ""
+
+msgid ""
+"<strong>%s</strong> supports automatic updates using WordPress' update "
+"mechanism. To use this feature you need to activate the theme using your "
+"Product Key, which can be found in your Elmastudio account dashboard. The "
+"theme stays fully functional without activation and still can be updated "
+"manually. %sClick here%s to activate <strong>%s</strong>."
+msgstr ""
+
+msgid ""
+"<b>Warning!</b> You're blocking external requests which means you won't be "
+"able to get %s updates. Please add %s to %s."
+msgstr ""
+
+msgid " Activation"
+msgstr ""
+
+msgid " Product Key Activation"
+msgstr ""
+
+msgid "Product Key Activation"
+msgstr ""
+
+msgid "Product Key Deactivation"
+msgstr ""
+
+msgid "Product Key"
+msgstr ""
+
+msgid "Product ID"
+msgstr ""
+
+msgid "Product Key Status"
+msgstr ""
+
+msgid "Deactivate Product Key"
+msgstr ""
+
+msgid "Save Changes"
+msgstr ""
+
+msgid "Activated"
+msgstr ""
+
+msgid "Deactivated"
+msgstr ""
+
+msgid ""
+"Connection failed to the Elmastudio server. Try again later. There may be a "
+"problem on your server preventing outgoing requests."
+msgstr ""
+
+msgid "Product Key deactivated."
+msgstr ""
+
+msgid ""
+"The Product Key could not be deactivated. Use the Product Key Deactivation "
+"tab to manually deactivate the Product Key before activating a new Product "
+"Key."
+msgstr ""
+
+msgid "Deactivates an Product Key so it can be used on another blog."
+msgstr ""
+
+msgid "%s activated."
+msgstr ""
