@@ -46,74 +46,13 @@ function blackwalnut_setup() {
 	add_theme_support( 'responsive-embeds' );
 
 	// Add support for editor font sizes.
-	add_theme_support( 'editor-font-sizes', array(
-		array(
-			'name' => __( 'small', 'blackwalnut' ),
-			'shortName' => __( 'S', 'blackwalnut' ),
-			'size' => 13,
-			'slug' => 'small'
-		),
-		array(
-			'name' => __( 'regular', 'blackwalnut' ),
-			'shortName' => __( 'M', 'blackwalnut' ),
-			'size' => 16,
-			'slug' => 'regular'
-		),
-		array(
-			'name' => __( 'large', 'blackwalnut' ),
-			'shortName' => __( 'L', 'blackwalnut' ),
-			'size' => 18,
-			'slug' => 'large'
-		),
-		array(
-			'name' => __( 'larger', 'blackwalnut' ),
-			'shortName' => __( 'XL', 'blackwalnut' ),
-			'size' => 22,
-			'slug' => 'larger'
-		)
-	) );
+
 
 	// Disable custom editor font sizes.
 	add_theme_support('disable-custom-font-sizes');
 
 	// Add editor color palette.
-	add_theme_support( 'editor-color-palette', array(
-		array(
-			'name' => __( 'dark grey', 'blackwalnut' ),
-			'slug' => 'dark-grey',
-			'color' => '#444444',
-		),
-		array(
-			'name' => __( 'light grey', 'blackwalnut' ),
-			'slug' => 'light-grey',
-			'color' => '#f4f4f4',
-		),
-		array(
-			'name' => __( 'white', 'blackwalnut' ),
-			'slug' => 'white',
-			'color' => '#ffffff',
-		),
-		array(
-			'name' => __( 'light yellow', 'blackwalnut' ),
-			'slug' => 'light-yellow',
-			'color' => '#ffffcc',
-		),
-		array(
-			'name' => __( 'light red', 'blackwalnut' ),
-			'slug' => 'light-red',
-			'color' => '#fff0f1',
-		),
-		array(
-			'name' => __( 'light green', 'blackwalnut' ),
-			'slug' => 'light-green',
-			'color' => '#e7f3e0',
-		),
-		array(
-			'name' => __( 'light blue', 'blackwalnut' ),
-			'slug' => 'light-blue',
-			'color' => '#eef6fe',
-		),
-	) );
+
 
 	// This theme styles the visual editor to resemble the theme style.
 	add_editor_style( array( 'editor-style.css' ) );
@@ -125,9 +64,7 @@ function blackwalnut_setup() {
 	add_theme_support( 'title-tag' );
 
 	// This theme uses wp_nav_menu().
-	register_nav_menus( array (
-		'primary' => __( 'Primary menu', 'blackwalnut' ),
-	) );
+
 
 	// Switch default core markup for search form, comment form, and comment to output valid HTML5.
 	add_theme_support( 'html5', array (
@@ -662,3 +599,82 @@ require( get_template_directory() . '/inc/shortcodes.php' );
 /* Add One Click Demo Import code.
 /*-----------------------------------------------------------------------------------*/
 require get_template_directory() . '/inc/demo-installer.php';
+
+/**
+ * Registrations that carry translated labels.
+ *
+ * WordPress 6.7 loads translations at init, so a __() call during
+ * after_setup_theme is too early and logs a notice on every request.
+ * These moved out of the setup function unchanged; only the hook differs.
+ */
+function blackwalnut_i18n_setup() {
+	add_theme_support( 'editor-font-sizes', array(
+		array(
+			'name' => __( 'small', 'blackwalnut' ),
+			'shortName' => __( 'S', 'blackwalnut' ),
+			'size' => 13,
+			'slug' => 'small'
+		),
+		array(
+			'name' => __( 'regular', 'blackwalnut' ),
+			'shortName' => __( 'M', 'blackwalnut' ),
+			'size' => 16,
+			'slug' => 'regular'
+		),
+		array(
+			'name' => __( 'large', 'blackwalnut' ),
+			'shortName' => __( 'L', 'blackwalnut' ),
+			'size' => 18,
+			'slug' => 'large'
+		),
+		array(
+			'name' => __( 'larger', 'blackwalnut' ),
+			'shortName' => __( 'XL', 'blackwalnut' ),
+			'size' => 22,
+			'slug' => 'larger'
+		)
+	) );
+
+	add_theme_support( 'editor-color-palette', array(
+		array(
+			'name' => __( 'dark grey', 'blackwalnut' ),
+			'slug' => 'dark-grey',
+			'color' => '#444444',
+		),
+		array(
+			'name' => __( 'light grey', 'blackwalnut' ),
+			'slug' => 'light-grey',
+			'color' => '#f4f4f4',
+		),
+		array(
+			'name' => __( 'white', 'blackwalnut' ),
+			'slug' => 'white',
+			'color' => '#ffffff',
+		),
+		array(
+			'name' => __( 'light yellow', 'blackwalnut' ),
+			'slug' => 'light-yellow',
+			'color' => '#ffffcc',
+		),
+		array(
+			'name' => __( 'light red', 'blackwalnut' ),
+			'slug' => 'light-red',
+			'color' => '#fff0f1',
+		),
+		array(
+			'name' => __( 'light green', 'blackwalnut' ),
+			'slug' => 'light-green',
+			'color' => '#e7f3e0',
+		),
+		array(
+			'name' => __( 'light blue', 'blackwalnut' ),
+			'slug' => 'light-blue',
+			'color' => '#eef6fe',
+		),
+	) );
+
+	register_nav_menus( array (
+		'primary' => __( 'Primary menu', 'blackwalnut' ),
+	) );
+}
+add_action( 'init', 'blackwalnut_i18n_setup' );

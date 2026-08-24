@@ -81,4 +81,13 @@ class blackwalnut_quote extends WP_Widget {
 	}
 }
 
-register_widget('blackwalnut_quote');
+
+/**
+ * Registered on widgets_init, which is where WordPress asks for it.
+ * At file scope the widget's constructor translated its own name before
+ * init, which WordPress 6.7 reports on every request.
+ */
+function blackwalnut_register_widgets() {
+	register_widget( 'blackwalnut_quote' );
+}
+add_action( 'widgets_init', 'blackwalnut_register_widgets' );
