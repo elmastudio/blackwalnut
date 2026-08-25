@@ -21,6 +21,7 @@ class blackwalnut_quote extends WP_Widget {
 	}
 
 	public function widget($args, $instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'title' => '', 'quotetext' => '', 'quoteauthor' => '' ) );
 		extract( $args );
 		$title = $instance['title'];
 		$quotetext = $instance['quotetext'];
@@ -57,6 +58,7 @@ class blackwalnut_quote extends WP_Widget {
    }
 
    function form($instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'title' => null, 'quotetext' => null, 'quoteauthor' => null ) );
    		$title = isset( $instance['title'] ) ? esc_attr( $instance['title'] ) : '';
    		$quotetext = isset( $instance['quotetext'] ) ? esc_attr( $instance['quotetext'] ) : '';
    		$quoteauthor = isset( $instance['quoteauthor'] ) ? esc_attr( $instance['quoteauthor'] ) : '';

@@ -1,0 +1,713 @@
+/*
+Theme Name: Black Walnut
+Description: Adds support for languages written in a Right To Left (RTL) direction.
+It's easy, just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+See: https://codex.wordpress.org/Right_to_Left_Language_Support
+*/
+
+/*-----------------------------------------------------------------------------------*/
+/*	2.0 General Styles
+*/
+#primary,
+#blog-sidebar,
+#colophon {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* --- Text Elements --- */
+
+ul, ol {
+	padding-right: 40px;
+	padding-left: 0;
+}
+
+li > ul,
+li > ol {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+.entry-content ul,
+.entry-content ol {
+	padding-right: 50px;
+	padding-left: 0;
+}
+
+.entry-content ul ul,
+.entry-content ol ol,
+#comments ul ul,
+#comments ol ol {
+	padding-right: 25px;
+	padding-left: 0;
+}
+
+/* --- Tables --- */
+
+table td {
+	padding: 6px 0 6px 6px;
+}
+
+table th {
+	padding: 6px 0 6px 6px;
+	text-align:right;
+}
+
+/* --- after / before --- */
+.single-post .entry-header .entry-comments:before,
+.entry-edit:before,
+#comments ul.comment-meta a.comment-edit-link:before {
+	padding: 0 0 0 2px;
+}
+
+/* --- Alignment --- */
+
+.alignright {
+	margin: 5px 0 5px 45px;
+	float: right;
+}
+
+.alignleft {
+	margin: 5px 30px 0 0;
+	float: left;
+}
+
+.aligncenter {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	4.0 Header
+/*-----------------------------------------------------------------------------------*/
+
+#site-title {
+	padding: 18px 10px 25px 84px;
+}
+
+p.site-description {
+	padding: 8px 2px 0 0;
+}
+
+/* --- Mobile Menu --- */
+
+#mobile-menu-toggle {
+	left: 10px;
+	right: auto;
+}
+
+#mobile-menu-toggle:after {
+	right: 0;
+	left: 0;
+}
+
+#mobile-menu-close:after,
+#moreinfo-close:after {
+	right: 0;
+	left: auto;
+}
+
+/* --- Main Menu + Header Top Menu --- */
+
+#site-nav ul li li a:before,
+#header-top-nav ul li li a:before,
+.widget-area .widget ul li li a:before {
+	padding: 0 0 0 4px;
+}
+
+/* --- Header Columns + Intro Text --- */
+
+#moreinfo-toggle {
+	padding: 10px 15px 10px 10px;
+}
+
+#moreinfo-toggle:before {
+	right: 0;
+	left: auto;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	5.0 Posts
+*/
+
+.entry-cats a {
+	padding: 0 0 0 12px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	5.1 Single Posts
+*/
+/* --- Typography --- */
+
+.entry-content blockquote cite,
+#comments blockquote cite,
+blockquote.quote-text cite {
+	text-align: left;
+}
+
+.entry-content blockquote cite:before,
+#comments blockquote cite:before,
+blockquote.quote-text cite:before {
+	padding: 0 0 0 2px;
+}
+
+.entry-content p span.dropcap {
+	float: right;
+	padding: 0 0 0 5px;
+}
+
+.entry-content p.pull-left {
+	text-align: left;
+}
+
+/* --- Images / Video --- */
+
+.entry-content .alignright p.wp-caption-text {
+	text-align: right;
+}
+
+.entry-content .alignleft p.wp-caption-text {
+	text-align: left;
+	margin-left: 6px;
+	margin-right: auto;
+}
+
+/* --- Image Galleries --- */
+
+.gallery .gallery-item {
+	float: right;
+}
+
+.gallery-columns-2 .gallery-item:nth-of-type(odd),
+.gallery-columns-3 .gallery-item:nth-of-type(3n+1) {
+	padding-left: 1.4%;
+	padding-right: 0;
+}
+
+.gallery-columns-2 .gallery-item:nth-of-type(even),
+.gallery-columns-3 .gallery-item:nth-of-type(3n+3) {
+	padding-right: 1.4%;
+	padding-left: 0;
+}
+
+.gallery-columns-3 .gallery-item:nth-of-type(3n+2) {
+	padding-right: 0.7%;
+	padding-left: 0.7%;
+}
+
+/* --- Author Box --- */
+
+.authorbox .author-info img.avatar {
+	margin: 3px 0 0 20px;
+	float: right;
+}
+
+.authorbox p.author-description {
+	margin: 0 100px 0 0;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	5.2 Comments
+*/
+
+#comments h3.comments-title span a {
+	float: left;
+}
+
+/* --- Comment Content --- */
+#comments .comment-avatar {
+	float: right;
+}
+
+#comments .comment-content {
+	padding: 0 60px 0 0;
+}
+
+#comments .comment-details {
+	float: right;
+}
+
+#comments .comment-text {
+	float: right;
+}
+
+#comments .comment-reply {
+	text-align: left;
+}
+
+/* Comments Reply */
+#comments #respond {
+	text-align: right;
+}
+
+#comments ol.commentlist #respond {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+#respond a#cancel-comment-reply-link {
+	float:  left;
+}
+
+#commentform p.form-submit {
+	text-align: left;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	6.0 Pagination + Infinite Scroll
+*/
+
+.nav-previous,
+.nav-next {
+	float:right;
+}
+
+.nav-next {
+	padding: 8px 18px 8px 0;
+	text-align: right;
+}
+
+.nav-previous {
+	padding: 8px 0 8px 18px;
+	border-left: 1px solid #cbcbcb;
+	text-align: left;
+	border-right: none;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* 10.0 Widgets
+*/
+
+.widget select,
+.widget iframe {
+	margin-right: 1px;
+	margin-right: 0.1rem;
+	margin-left: auto;
+}
+
+/* --- Widget with Lists --- */
+.widget_categories ul,
+.widget_archive ul,
+.widget_pages ul,
+.widget_nav_menu ul,
+.widget_meta ul,
+.widget_recent_entries ul,
+.widget_recent_comments ul {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+/* --- RSS Widget --- */
+.widget-area .widget_rss ul li span.rss-date:before {
+	padding: 0 2px 0 4px;
+}
+
+/* --- Standard Recent Posts --- */
+.widget_recent_entries span.post-date:before {
+	padding: 0 0 0 4px;
+}
+
+/* --- Calendar Widget --- */
+.widget_calendar #wp-calendar caption {
+	text-align: right;
+}
+
+/* --- Black Walnut Recent Posts Widget --- */
+
+.widget-area .widget_blackwalnut_recentposts .no-thumb:after {
+	right    : 39.285%;
+}
+
+/* --- Subscription Widget --- */
+
+.jetpack_subscription_widget input#subscribe-field {
+	float: right;
+	margin-left: 2%;
+	margin-right: auto;
+}
+
+.sharedaddy h3.sd-title {
+	float: right;
+}
+
+div.sharedaddy h3,
+#content div.sharedaddy h3,
+#main div.sharedaddy h3,
+#main-wrap div.sharedaddy h3 {
+	float: right;
+	padding: 3px 0 0 20px;
+}
+
+.entry-content .sharedaddy .sd-content {
+	float: right;
+}
+
+.contact-form label {
+	margin-right: 5px;
+	margin-left: auto;
+}
+
+.entry-content .contact-form label span {
+	margin-right: 3 !important;
+	margin-left: auto;
+}
+
+/* --- Infinite Scroll --- */
+.infinite-loader .spinner {
+	right: 48%;
+	left: auto;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	13.0 Shortcodes
+*/
+/* Multi Columns */
+
+.entry-content .three-columns-one,
+.entry-content .three-columns-two,
+.entry-content .four-columns-one,
+.entry-content .four-columns-two,
+.entry-content .four-columns-three {
+	float: right;
+}
+
+.last {
+	clear: left;
+	margin-left: 0 !important;
+	margin-right: auto;
+}
+
+/* --- General --- */
+	#primary,
+	#blog-sidebar {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+#site-title,
+	.searchbox input.search-field {
+	padding-right: 35px;
+	padding-left: 0;
+}
+
+#mobile-menu-toggle {
+	left: 35px;
+	right: auto;
+}
+
+#site-nav ul,
+	#header-top-nav ul,
+	.intro-text {
+	padding-right: 35px;
+	padding-left: 35px;
+}
+
+/* --- Typography --- */
+
+.entry-content p.pull-right {
+	margin: 2px 0 10px 30px;
+	float: right;
+}
+
+/* Minimum width of 767 pixels (tablets portrait)
+------------------------------------------------------------------------------------ */
+@media screen and (min-width: 767px) {
+	/* --- General --- */
+		#primary,
+		#blog-sidebar {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	#site-title,
+		.searchbox input.search-field {
+		padding-right: 35px;
+		padding-left: 0;
+	}
+
+	#mobile-menu-toggle {
+		left: 35px;
+		right: auto;
+	}
+
+	#site-nav ul,
+		#header-top-nav ul,
+		.intro-text {
+		padding-right: 35px;
+		padding-left: 35px;
+	}
+
+	/* --- Typography --- */
+
+	.entry-content p.pull-right {
+		margin: 2px 0 10px 30px;
+		float: right;
+	}
+
+	.entry-content p.pull-left {
+		margin: 2px 30px 10px 0;
+		float: left;
+	}
+
+	/* --- Comments --- */
+
+	#comments .comment-content {
+		padding: 0 80px 0 0;
+	}
+
+	#comments li.comment ul.children {
+		margin-right: 80px;
+		margin-left: auto;
+	}
+
+	#comments li.comment ul.children ul.children {
+		margin-right: 0;
+		margin-left: auto;
+	}
+
+	#commentform label {
+		float: right;
+	}
+
+	#commentform input#author,
+		#commentform input#email,
+		#commentform input#url,
+		#commentform textarea#comment {
+		float: right;
+	}
+
+	/* --- Footer Widget Areas --- */
+		.footer-column {
+		float: right;
+	}
+
+	#footer-column-one {
+		margin-left: 8.82%;
+		margin-right: auto;
+	}
+
+	#footer-column-three {
+		float: left;
+	}
+
+	#footer-column-two .widget {
+		float: left;
+	}
+
+	/* --- Shortcodes --- */
+
+	.two-columns-one,
+		.three-columns-one,
+		.three-columns-two,
+		.four-columns-one,
+		.four-columns-two,
+		.four-columns-three {
+		float:right;
+	}
+
+	.two-columns-one {
+		margin: 0 0 0 4%;
+	}
+
+	.three-columns-one {
+		margin: 0 0 0 3%;
+	}
+
+	.four-columns-one {
+		margin: 0 0 0 2%;
+	}
+}
+
+/* Minimum width of 980 pixels (tablets landscape)
+------------------------------------------------------------------------------------ */
+@media screen and (min-width: 980px) {
+	/* --- General --- */
+		#main-container {
+		padding-right: 35px;
+		padding-left: 35px;
+	}
+
+	#colophon {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	#main-wrap {
+		float: right;
+	}
+
+	.blog #primary,
+		.page #primary,
+		.archive #primary,
+		.search #primary,
+		.error404 #primary {
+		float: right;
+	}
+
+	.singlepost-wrap {
+		float: right;
+	}
+
+	#blog-sidebar {
+		float: left;
+	}
+
+	#blog-sidebar .widget {
+		float: left;
+	}
+
+	.three-columns-wrap .widget-area,
+		.footer-column,
+		.two-columns-wrap .two-columns-small {
+		float: right;
+	}
+
+	#three-columns-top-right,
+		#three-columns-bottom-right,
+		#footer-column-one {
+		margin-left: 8.82%;
+		margin-right: auto;
+	}
+
+	.three-columns-wrap #three-columns-top-left,
+		.three-columns-wrap #three-columns-bottom-left,
+		#footer-column-three,
+		#two-columns-center-bigleft,
+		#two-columns-center-smallleft {
+		float: left;
+	}
+
+	.three-columns-wrap #three-columns-top-left .widget,
+		.three-columns-wrap #three-columns-bottom-left .widget,
+		.two-columns-wrap #two-columns-center-smallleft .widget {
+		float: left;
+	}
+
+	#two-columns-center-bigright,
+		#two-columns-center-smallright {
+		float: right;
+	}
+}
+
+/* Minimum width of 1240px
+------------------------------------------------------------------------------------ */
+@media screen and (min-width: 1240px) {
+		/* --- General --- */
+		#masthead,
+		#main-container {
+		margin-right: 50px;
+		margin-left: auto;
+	}
+
+	#header-top-nav,
+		#site-nav ul,
+		#header-top-nav ul,
+		#primary,
+		#blog-sidebar,
+		#colophon {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	#main-container {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.blog #primary,
+		.page #primary,
+		.archive #primary,
+		.search #primary,
+		.error404 #primary {
+		float: right;
+	}
+
+	.singlepost-wrap {
+		float: right;
+	}
+
+	#blog-sidebar {
+		float: left;
+	}
+
+	/* --- Header --- */
+
+	.title-wrap {
+		float: left;
+	}
+
+	.header-info-wrap {
+		float: right;
+	}
+
+	.intro-text {
+		float: right;
+		margin: 0 0 0 90px;
+	}
+
+	/* --- Header Top Menu +  Main Menu --- */
+
+	#header-top-nav {
+		float: right;
+	}
+
+	#site-nav ul {
+		padding: 10px 0 11px 20px;
+	}
+
+	#main-menu-wrap {
+		left: 0;
+		right: auto;
+	}
+
+	/* --- Main Nav fixed-positionend --- */
+	.sticky-content.fixed {
+		left: 0;
+		right: auto;
+	}
+
+	/* --- Typography --- */
+		.entry-content p.pull-right {
+		margin: 2px -20px 10px 20px;
+	}
+
+	.entry-content p.pull-left {
+		margin: 2px 40px 10px -40px;
+	}
+}
+
+/* Minimum width of 1300px
+------------------------------------------------------------------------------------ */
+@media screen and (min-width: 1340px) {
+	/* --- General --- */
+	#masthead,
+	#main-container {
+		margin-right: 135px;
+	}
+}
+
+/* Minimum width of 1400px
+------------------------------------------------------------------------------------ */
+@media screen and (min-width: 1400px) {
+	/* --- General --- */
+		#masthead,
+		#main-container {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	/* --- Pagination --- */
+	#nav-single {
+		right: -300px;
+		left: auto;
+	}
+	#nav-single .nav-next {
+		padding: 25px 18px 1px 0;
+	}
+	#nav-single .nav-previous {
+		padding: 25px 0px 1px 18px;
+	}
+}
